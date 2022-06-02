@@ -61,8 +61,7 @@ contract DGenFrends is ERC721URIStorage, Ownable, ReentrancyGuard{
     uint256 immutable public maxPublicMint = 10000;
     uint256 public publicMintId = 1001;
     uint256 public constant PUBLIC_SALE_PRICE = 0.3 ether;
-	
-	address public royalties;
+    address public royalties;
 
     // used to validate whitelists
     bytes32 public giftMerkleRoot;
